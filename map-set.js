@@ -18,11 +18,3 @@ class Users {
     }
   }
 }
-
-const mappedUser = new Users([
-  { id: 1, name: "Alice", email: "alice@example.com" },
-  { id: 2, name: "Bob", email: "bob@example.com" },
-]);
-mappedUser.addUsers([{ id: 3, name: "Ann", email: "ann@example.com" }]); 
-console.log(mappedUser.users);
-console.log(mappedUser.getUserById(3));
