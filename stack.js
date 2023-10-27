@@ -64,6 +64,8 @@ class Stack {
     return this.list.removeAt(0);
   }
   top() {
+    if (this.isEmpty())
+      return null
     return this.list.head.data;
   }
   isEmpty() {
@@ -74,12 +76,15 @@ class Stack {
   }
 }
 
-let stack=new Stack()
-stack.push(1)
-stack.push(2)
-stack.push(4)
+let stack = new Stack()
+
 console.log(stack.isEmpty());
-console.log(stack.getSize());
+
 console.log(stack.top());
+console.log(stack.getSize());
+stack.push(1)
+stack.push(1)
+stack.push(1)
+stack.push(1)
 console.log(stack.pop());
 console.log(stack.top());
