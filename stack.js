@@ -75,16 +75,3 @@ class Stack {
     return this.list.size
   }
 }
-
-let stack = new Stack()
-
-console.log(stack.isEmpty());
-
-console.log(stack.top());
-console.log(stack.getSize());
-stack.push(1)
-stack.push(1)
-stack.push(1)
-stack.push(1)
-console.log(stack.pop());
-console.log(stack.top());
