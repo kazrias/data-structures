@@ -121,17 +121,3 @@ class LinkedList {
   }
 }
 
-let linkedL = new LinkedList();
-// console.log(linkedL.isEmpty());
-linkedL.append(10)
-linkedL.append(11)
-linkedL.append(12)
-linkedL.prepend(11)
-linkedL.prepend(10)
-linkedL.insert(13, 2)
-linkedL.removeAt(2)
-linkedL.remove(10)
-console.log(linkedL.remove(19));
-console.log(linkedL.isEmpty());
-console.log(linkedL.getSize());
-console.log(linkedL.printList());
